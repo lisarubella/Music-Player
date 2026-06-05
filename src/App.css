@@ -25,6 +25,13 @@ body {
   justify-content: center;
 }
 
+@media (min-width: 1024px) {
+  .app {
+    max-width: 600px;
+    padding: 40px;
+  }
+}
+
 /* Header with Logo */
 .header {
   text-align: center;
@@ -43,6 +50,12 @@ body {
   animation: spin 3s linear infinite;
 }
 
+@media (min-width: 1024px) {
+  .app-logo {
+    font-size: 50px;
+  }
+}
+
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
@@ -55,6 +68,12 @@ body {
   letter-spacing: 1px;
 }
 
+@media (min-width: 1024px) {
+  .app-title {
+    font-size: 40px;
+  }
+}
+
 .player-container {
   background: rgba(255, 248, 240, 0.95);
   border-radius: 25px;
@@ -63,6 +82,13 @@ body {
   backdrop-filter: blur(10px);
   width: 100%;
   max-width: 500px;
+}
+
+@media (min-width: 1024px) {
+  .player-container {
+    max-width: 600px;
+    padding: 40px 30px;
+  }
 }
 
 /* Album Art */
@@ -84,6 +110,14 @@ body {
   animation: float 3s ease-in-out infinite;
   box-shadow: 0 15px 40px rgba(139, 111, 71, 0.3);
   font-size: 60px;
+}
+
+@media (min-width: 1024px) {
+  .album-image {
+    width: 250px;
+    height: 250px;
+    font-size: 80px;
+  }
 }
 
 .music-note-animate {
@@ -119,6 +153,12 @@ body {
   font-weight: 700;
   color: #5D4E37;
   margin-bottom: 8px;
+}
+
+@media (min-width: 1024px) {
+  .song-title {
+    font-size: 26px;
+  }
 }
 
 .artist-name {
@@ -193,6 +233,12 @@ body {
   align-items: center;
 }
 
+@media (min-width: 1024px) {
+  .control-btn {
+    padding: 15px;
+  }
+}
+
 .control-btn:hover:not(:disabled) {
   background: rgba(212, 165, 116, 0.15);
   transform: scale(1.1);
@@ -212,6 +258,14 @@ body {
   font-size: 32px;
   box-shadow: 0 12px 35px rgba(212, 165, 116, 0.4);
   border: none;
+}
+
+@media (min-width: 1024px) {
+  .play-btn {
+    width: 90px;
+    height: 90px;
+    font-size: 42px;
+  }
 }
 
 .play-btn:hover:not(:disabled) {
@@ -325,6 +379,12 @@ body {
   gap: 10px;
   max-height: 350px;
   overflow-y: auto;
+}
+
+@media (min-width: 1024px) {
+  .playlist-items {
+    max-height: 450px;
+  }
 }
 
 .playlist-item {
